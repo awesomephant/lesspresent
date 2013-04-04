@@ -1,8 +1,11 @@
 @mixin s($index) {
 	.onslide-#{$index}{
-		section:nth-of-type(#{$index + 1}){
-			opacity: 1;
-			@content;
+
+		@if type-of($index) == number{
+			.slide:nth-of-type(#{$index + 1}){
+				opacity: 1;
+				@content;
+			}
 		}
 	}
 }
@@ -16,7 +19,7 @@ section {
 	
 	-moz-transition: .3s;
 	-webkit-transition: .3s;
-	-moz-transition: .3s;
+	transition: .3s;
 }
 
 @include s(0){
