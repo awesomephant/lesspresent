@@ -2,6 +2,7 @@
 	.onslide-#{$index}{
 		.slide:nth-of-type(#{$index + 1}){
 			opacity: 1;
+			pointer-events:auto;
 			@content;
 		}
 	}

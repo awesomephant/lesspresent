@@ -1,0 +1,23 @@
+@mixin sactive($index) {
+	.onslide-#{$index}{
+		.slide:nth-of-type(#{$index + 1}){
+			opacity: 1;
+			pointer-events:auto;
+			@content;
+		}
+	}
+}
+
+@mixin s($index) {
+	@if type-of($index) == number {
+	.slide:nth-of-type(#{$index + 1}){
+		@content;
+	}
+	}
+	@else if type-of($index) == string {
+		.slide.#{$index}{
+			@content;
+		}
+	}
+}
+

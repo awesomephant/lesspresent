@@ -150,51 +150,71 @@ section {
   bottom: 0;
   left: 0;
   opacity: 0;
+  pointer-events: none;
   -moz-transition: .3s;
   -webkit-transition: .3s;
   transition: .3s; }
 
 .onslide-0 .slide:nth-of-type(1) {
   opacity: 1;
+  pointer-events: auto;
   opacity: 1; }
 
 .onslide-1 .slide:nth-of-type(2) {
   opacity: 1;
+  pointer-events: auto;
   opacity: 1; }
 
 .onslide-2 .slide:nth-of-type(3) {
   opacity: 1;
+  pointer-events: auto;
   opacity: 1; }
 
 .onslide-3 .slide:nth-of-type(4) {
   opacity: 1;
+  pointer-events: auto;
   opacity: 1; }
 
 .onslide-4 .slide:nth-of-type(5) {
   opacity: 1;
+  pointer-events: auto;
   opacity: 1; }
 
 .onslide-5 .slide:nth-of-type(6) {
   opacity: 1;
+  pointer-events: auto;
   opacity: 1; }
 
 .onslide-6 .slide:nth-of-type(7) {
   opacity: 1;
+  pointer-events: auto;
   opacity: 1; }
 
-.onslide-7 .slide:nth-of-type(8) {
+.onslide-8 .slide:nth-of-type(9) {
   opacity: 1;
+  pointer-events: auto;
+  opacity: 1; }
+
+.onslide-9 .slide:nth-of-type(10) {
+  opacity: 1;
+  pointer-events: auto;
+  opacity: 1; }
+
+.onslide-10 .slide:nth-of-type(11) {
+  opacity: 1;
+  pointer-events: auto;
   opacity: 1; }
 
 .slide:nth-of-type(1) {
-  font-family: bebas;
-  background: #e74c3c; }
-  .slide:nth-of-type(1) h1 {
-    font-size: 320px;
-    color: white; }
+  background: black; }
+  .slide:nth-of-type(1) img {
+    height: 100%;
+    margin: 0;
+    float: left; }
   .slide:nth-of-type(1) .author {
     font-size: 120px;
-    opacity: .5; }
+    opacity: 1;
+    color: white; }
 
 .content {
   background: #f1c40f; }
@@ -229,25 +249,26 @@ section {
     font-size: 60px;
     color: #a82315; }
 
-.slide.langs h2 {
+.langs h2 {
   color: white;
   font-family: bebas;
   font-size: 200px; }
 
-.slide.berg {
+.berg {
   background-image: url(../assets/iceberg.jpg); }
 
-.slide.devices {
+.devices {
   background: #00b267; }
-  .slide.devices img {
+  .devices img {
     width: 90%;
     display: block;
     margin: 20px auto; }
 
-.slide.sandbox {
-  background-image: url("../../assets/sandbox.png");
-  background-size: cover; }
-  .slide.sandbox h3 {
+.sandbox {
+  background-image: url(../../assets/sandbox.png);
+  background-size: cover;
+  background-color: #3498db; }
+  .sandbox h3 {
     font-size: 150px;
     color: white;
     display: inline-block; }
@@ -265,3 +286,30 @@ img {
   margin: 0 auto;
   display: block;
   margin-top: 2em; }
+
+.demo-alert {
+  background: #fafafa; }
+  .demo-alert button {
+    margin: 10em auto;
+    display: block; }
+
+.tile {
+  font-family: sans-serif;
+  display: inline-block; }
+  .tile h2 {
+    margin: 0;
+    padding: 0; }
+
+.fancy-button {
+  background: #3498db;
+  color: white;
+  transition: .3s;
+  border: none;
+  border-radius: 10em;
+  padding: .5em 1.5em;
+  font-size: 1.5em;
+  font-family: sans-serif; }
+  .fancy-button:hover {
+    cursor: pointer;
+    background: #258cd1;
+    box-shadow: 0 0 0 10px #8bc4ea; }

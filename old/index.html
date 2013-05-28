@@ -11,7 +11,7 @@
 		
 		<meta name="viewport" content="width=1024, height=800, initial-scale=1">
 		
-		<link href="stylesheets/screen.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/style.css">
 		
 		<script>
 			
@@ -29,13 +29,7 @@
 			<figure class='tile'>
 				<img src='../assets/invaders.png'>
 				<figcaption>
-					<h2>Making Websites</h2>
-				</figcaption>
-			</figure>
-			<figure class='tile'>
-				<img src='../assets/invaders.png'>
-				<figcaption>
-					<h2>Geschichte</h2>
+					<h2>Anwendung</h2>
 				</figcaption>
 			</figure>
 						<figure class='tile'>
@@ -44,32 +38,28 @@
 					<h2>Anwendung</h2>
 				</figcaption>
 			</figure>
-			<figure class='tile'>
-				<img src='../assets/alert.png'>
-				<figcaption>
-					<h2>Grundlagen</h2>
-				</figcaption>
-			</figure>
 						<figure class='tile'>
-				<img src='../assets/code-2.png'>
+				<img src='../assets/invaders.png'>
 				<figcaption>
-					<h2>Sprachprinzipien</h2>
-					<ol>
-						<li>Weakly typed</li>
-						<li>first-class functions</li>
-						<li>Prototype-based</li>
-						<li>dynamic</li>
-					</ol>
+					<h2>Anwendung</h2>
 				</figcaption>
 			</figure>
 						<figure class='tile'>
 				<img src='../assets/invaders.png'>
 				<figcaption>
 					<h2>Anwendung</h2>
-					<ol>
-						<li>APIs</li>
-						<li>Spaceinvaders</li>
-					</ol>
+				</figcaption>
+			</figure>
+						<figure class='tile'>
+				<img src='../assets/invaders.png'>
+				<figcaption>
+					<h2>Anwendung</h2>
+				</figcaption>
+			</figure>
+						<figure class='tile'>
+				<img src='../assets/invaders.png'>
+				<figcaption>
+					<h2>Anwendung</h2>
 				</figcaption>
 			</figure>
 		</section>		
@@ -93,64 +83,12 @@
 		<section class='slide demo-alert'>
 			<button id='demo-button'class='fancy-button'>Hello World!</button>
 		</section>
+		<section class='slide sandbox'>
+			<h3>Sandbox.</h3>
+		</section>
 		<section class='slide devices'>
 			<img src='../assets/devices-crop.svg'>
 			Plattformunabhängig
-		</section>
-		<section class='slide structure'>
-			<h2>Skriptsprache</h2>
-		</section>
-		<section class='slide structure'>
-			<h2>weakly typed</h2>
-		</section>
-		<section class='slide code'>
-			<pre class='lang-javascript big'>
-				<code>
-var foo = 'hello world';
-var bar = 123;
-
-window.alert(bar);
-
-				</code>
-			</pre>
-		</section>
-		<section class='slide structure'>
-			<h2>prototype-based</h2>
-		</section>
-		<section class='slide code'>
-		<pre class='lang-javascript small'>
-		<code>
-var foo = {name: "foo", one: 1, two: 2};
- 
-// Another "ex nihilo" object.
-var bar = {two: "two", three: 3};
- 
-// Gecko and Webkit JavaScript engines can directly 
-// manipulate the internal prototype link.
-// For the sake of simplicity, let us pretend 
-// that the following line works regardless of the 
-// engine used:
-bar.__proto__ = foo; // foo is now the prototype of bar.
- 
-// If we try to access foo's properties from bar 
-// from now on, we'll succeed. 
-bar.one // Resolves to 1.
- 
-// The child object's properties are also accessible.
-bar.three // Resolves to 3.
- 
-// Own properties shadow prototype properties
-bar.two; // Resolves to "two"
-foo.name; // unaffected, resolves to "foo"
-bar.name; // Resolves to "foo"
-</code>
-</pre>
-		</section>
-		<section class='slide structure'>
-			<h2>dynamic</h2>
-		</section>
-		<section class='slide structure'>
-			<h2>first-class functions</h2>
 		</section>
 	</div>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>

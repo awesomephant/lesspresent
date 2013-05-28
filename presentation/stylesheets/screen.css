@@ -1,0 +1,771 @@
+@charset "CP850";
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/**
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+ */
+/* line 8, ../sass/_prism.scss */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #f8f8f2;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+  font-family: Consolas, Monaco, 'Andale Mono', monospace;
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+/* line 28, ../sass/_prism.scss */
+pre[class*="language-"] {
+  padding: 1em;
+  margin: .5em 0;
+  overflow: auto;
+  border-radius: 0.3em;
+}
+
+/* line 36, ../sass/_prism.scss */
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+  background: #272822;
+}
+
+/* Inline code */
+/* line 41, ../sass/_prism.scss */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+}
+
+/* line 49, ../sass/_prism.scss */
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: slategray;
+}
+
+/* line 53, ../sass/_prism.scss */
+.token.punctuation {
+  color: #f8f8f2;
+}
+
+/* line 57, ../sass/_prism.scss */
+.namespace {
+  opacity: .7;
+}
+
+/* line 62, ../sass/_prism.scss */
+.token.property,
+.token.tag {
+  color: #f92672;
+}
+
+/* line 67, ../sass/_prism.scss */
+.token.boolean,
+.token.number {
+  color: #ae81ff;
+}
+
+/* line 73, ../sass/_prism.scss */
+.token.selector,
+.token.attr-name,
+.token.string {
+  color: #a6e22e;
+}
+
+/* line 82, ../sass/_prism.scss */
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+  color: #f8f8f2;
+}
+
+/* line 88, ../sass/_prism.scss */
+.token.atrule,
+.token.attr-value {
+  color: #e6db74;
+}
+
+/* line 93, ../sass/_prism.scss */
+.token.keyword {
+  color: #66d9ef;
+}
+
+/* line 98, ../sass/_prism.scss */
+.token.regex,
+.token.important {
+  color: #fd971f;
+}
+
+/* line 102, ../sass/_prism.scss */
+.token.important {
+  font-weight: bold;
+}
+
+/* line 106, ../sass/_prism.scss */
+.token.entity {
+  cursor: help;
+}
+
+/* line 109, ../sass/_prism.scss */
+pre[data-line] {
+  position: relative;
+  padding: 1em 0 1em 3em;
+}
+
+/* line 114, ../sass/_prism.scss */
+.line-highlight {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: inherit 0;
+  margin-top: 1em;
+  /* Same as .prism’s padding-top */
+  background: rgba(153, 122, 102, 0.08);
+  background: -moz-linear-gradient(left, rgba(153, 122, 102, 0.1) 70%, rgba(153, 122, 102, 0));
+  background: -webkit-linear-gradient(left, rgba(153, 122, 102, 0.1) 70%, rgba(153, 122, 102, 0));
+  background: -o-linear-gradient(left, rgba(153, 122, 102, 0.1) 70%, rgba(153, 122, 102, 0));
+  background: linear-gradient(left, rgba(153, 122, 102, 0.1) 70%, rgba(153, 122, 102, 0));
+  pointer-events: none;
+  line-height: inherit;
+  white-space: pre;
+}
+
+/* line 134, ../sass/_prism.scss */
+.line-highlight:before,
+.line-highlight[data-end]:after {
+  content: attr(data-start);
+  position: absolute;
+  top: .4em;
+  left: .6em;
+  min-width: 1em;
+  padding: 0 .5em;
+  background-color: rgba(153, 122, 102, 0.4);
+  color: #f5f2f0;
+  font: bold 65%/1.5 sans-serif;
+  text-align: center;
+  vertical-align: .3em;
+  border-radius: 999px;
+  text-shadow: none;
+  box-shadow: 0 1px white;
+}
+
+/* line 151, ../sass/_prism.scss */
+.line-highlight[data-end]:after {
+  content: attr(data-end);
+  top: auto;
+  bottom: .4em;
+}
+
+/* line 156, ../sass/_prism.scss */
+.token a {
+  color: inherit;
+}
+
+@font-face {
+  font-family: 'bebas';
+  src: url("../../assets/BebasNeue-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 15, ../sass/_slides.scss */
+* {
+  -moz-box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 21, ../sass/_slides.scss */
+body {
+  font-size: 100%;
+  font-family: sans-serif;
+}
+
+/* line 25, ../sass/_slides.scss */
+section {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  -moz-transition: .3s;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+/* line 3, ../sass/_bits.scss */
+.onslide-0 .slide:nth-of-type(1) {
+  opacity: 1;
+  pointer-events: auto;
+  opacity: 1;
+}
+
+/* line 3, ../sass/_bits.scss */
+.onslide-1 .slide:nth-of-type(2) {
+  opacity: 1;
+  pointer-events: auto;
+  opacity: 1;
+}
+
+/* line 3, ../sass/_bits.scss */
+.onslide-2 .slide:nth-of-type(3) {
+  opacity: 1;
+  pointer-events: auto;
+  opacity: 1;
+}
+
+/* line 3, ../sass/_bits.scss */
+.onslide-3 .slide:nth-of-type(4) {
+  opacity: 1;
+  pointer-events: auto;
+  opacity: 1;
+}
+
+/* line 3, ../sass/_bits.scss */
+.onslide-4 .slide:nth-of-type(5) {
+  opacity: 1;
+  pointer-events: auto;
+  opacity: 1;
+}
+
+/* line 3, ../sass/_bits.scss */
+.onslide-5 .slide:nth-of-type(6) {
+  opacity: 1;
+  pointer-events: auto;
+  opacity: 1;
+}
+
+/* line 3, ../sass/_bits.scss */
+.onslide-6 .slide:nth-of-type(7) {
+  opacity: 1;
+  pointer-events: auto;
+  opacity: 1;
+}
+
+/* line 3, ../sass/_bits.scss */
+.onslide-7 .slide:nth-of-type(8) {
+  opacity: 1;
+  pointer-events: auto;
+  opacity: 1;
+}
+
+/* line 3, ../sass/_bits.scss */
+.onslide-8 .slide:nth-of-type(9) {
+  opacity: 1;
+  pointer-events: auto;
+  opacity: 1;
+}
+
+/* line 3, ../sass/_bits.scss */
+.onslide-9 .slide:nth-of-type(10) {
+  opacity: 1;
+  pointer-events: auto;
+  opacity: 1;
+}
+
+/* line 3, ../sass/_bits.scss */
+.onslide-10 .slide:nth-of-type(11) {
+  opacity: 1;
+  pointer-events: auto;
+  opacity: 1;
+}
+
+/* line 3, ../sass/_bits.scss */
+.onslide-11 .slide:nth-of-type(12) {
+  opacity: 1;
+  pointer-events: auto;
+  opacity: 1;
+}
+
+/* line 3, ../sass/_bits.scss */
+.onslide-12 .slide:nth-of-type(13) {
+  opacity: 1;
+  pointer-events: auto;
+  opacity: 1;
+}
+
+/* line 3, ../sass/_bits.scss */
+.onslide-13 .slide:nth-of-type(14) {
+  opacity: 1;
+  pointer-events: auto;
+  opacity: 1;
+}
+
+/* line 3, ../sass/_bits.scss */
+.onslide-14 .slide:nth-of-type(15) {
+  opacity: 1;
+  pointer-events: auto;
+  opacity: 1;
+}
+
+/* line 13, ../sass/_bits.scss */
+.slide:nth-of-type(1) {
+  background: black;
+}
+/* line 40, ../sass/_slides.scss */
+.slide:nth-of-type(1) img {
+  height: 100%;
+  margin: 0;
+  float: left;
+}
+/* line 46, ../sass/_slides.scss */
+.slide:nth-of-type(1) .author {
+  font-size: 120px;
+  opacity: 1;
+  color: white;
+}
+
+/* line 67, ../sass/_slides.scss */
+.content {
+  background: #3fb8af;
+}
+/* line 55, ../sass/_slides.scss */
+.content h2 {
+  font-size: 280px;
+  color: white;
+  text-align: center;
+}
+/* line 60, ../sass/_slides.scss */
+.content h3 {
+  text-align: center;
+  font-size: 60px;
+  color: #256c67;
+}
+
+/* line 70, ../sass/_slides.scss */
+.style {
+  background: #3fb8af;
+}
+/* line 55, ../sass/_slides.scss */
+.style h2 {
+  font-size: 280px;
+  color: white;
+  text-align: center;
+}
+/* line 60, ../sass/_slides.scss */
+.style h3 {
+  text-align: center;
+  font-size: 60px;
+  color: #256c67;
+}
+
+/* line 73, ../sass/_slides.scss */
+.beh {
+  background: #3fb8af;
+}
+/* line 55, ../sass/_slides.scss */
+.beh h2 {
+  font-size: 280px;
+  color: white;
+  text-align: center;
+}
+/* line 60, ../sass/_slides.scss */
+.beh h3 {
+  text-align: center;
+  font-size: 60px;
+  color: #256c67;
+}
+
+/* line 78, ../sass/_slides.scss */
+.langs h2 {
+  color: white;
+  font-size: 200px;
+}
+
+/* line 85, ../sass/_slides.scss */
+.berg {
+  background-image: url(../../assets/iceberg.jpg);
+}
+
+/* line 89, ../sass/_slides.scss */
+.devices {
+  background: #7fc7af;
+}
+/* line 91, ../sass/_slides.scss */
+.devices img {
+  width: 90%;
+  display: block;
+  margin: 20px auto;
+}
+
+/* line 98, ../sass/_slides.scss */
+.sandbox {
+  background-image: url(../../assets/sandbox.png);
+  background-size: cover;
+}
+/* line 102, ../sass/_slides.scss */
+.sandbox h3 {
+  font-size: 150px;
+  color: white;
+  display: inline-block;
+}
+
+/* line 109, ../sass/_slides.scss */
+.structure h2 {
+  color: #272822;
+  font-size: 100px;
+}
+
+/* line 114, ../sass/_slides.scss */
+code {
+  font-size: 25px;
+}
+
+/* line 121, ../sass/_slides.scss */
+img {
+  margin: 0 auto;
+  display: block;
+  margin-top: 2em;
+}
+
+/* line 127, ../sass/_slides.scss */
+.demo-alert {
+  background: #fafafa;
+}
+/* line 130, ../sass/_slides.scss */
+.demo-alert button {
+  margin: 10em auto;
+  display: block;
+}
+
+/* line 135, ../sass/_slides.scss */
+.toc {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  -ms-column-count: 3;
+  -o-column-count: 3;
+  column-count: 3;
+  padding: 2em;
+  background: #7fc7af;
+}
+
+/* line 140, ../sass/_slides.scss */
+.tile {
+  font-family: sans-serif;
+  display: inline-block;
+  background: white;
+  margin-bottom: 10px;
+  width: 100%;
+  -webkit-box-shadow: 0 2px 5px -1px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 2px 5px -1px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 2px 5px -1px rgba(0, 0, 0, 0.4);
+}
+/* line 147, ../sass/_slides.scss */
+.tile figcaption {
+  padding: .5em;
+}
+/* line 150, ../sass/_slides.scss */
+.tile img {
+  width: 100%;
+  margin: 0;
+}
+/* line 154, ../sass/_slides.scss */
+.tile h2 {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+/* line 159, ../sass/_slides.scss */
+.tile ol {
+  list-style: circle inside;
+  padding-top: .2em;
+}
+/* line 163, ../sass/_slides.scss */
+.tile li {
+  padding-top: .4em;
+}
+
+/* line 168, ../sass/_slides.scss */
+.code {
+  background: #272822;
+}
+
+/* line 172, ../sass/_slides.scss */
+.big code {
+  font-size: 80px;
+}
+
+/* line 175, ../sass/_slides.scss */
+.small code {
+  font-size: 30px;
+}
+
+/* line 179, ../sass/_slides.scss */
+.demo-alert {
+  background: #fafafa;
+}
+
+/* line 183, ../sass/_slides.scss */
+.fancy-button {
+  background: #ff3d7f;
+  color: white;
+  transition: .3s;
+  border: none;
+  border-radius: 10em;
+  padding: .5em 1.5em;
+  font-size: 1.5em;
+  font-family: sans-serif;
+}
+/* line 193, ../sass/_slides.scss */
+.fancy-button:hover {
+  cursor: pointer;
+  background: #ff236e;
+  box-shadow: 0 0 0 10px #ffa3c2;
+}
+
+/**
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+ */
+/* line 8, ../sass/_prism.scss */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #f8f8f2;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+  font-family: Consolas, Monaco, 'Andale Mono', monospace;
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+/* line 28, ../sass/_prism.scss */
+pre[class*="language-"] {
+  padding: 1em;
+  margin: .5em 0;
+  overflow: auto;
+  border-radius: 0.3em;
+}
+
+/* line 36, ../sass/_prism.scss */
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+  background: #272822;
+}
+
+/* Inline code */
+/* line 41, ../sass/_prism.scss */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+}
+
+/* line 49, ../sass/_prism.scss */
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: slategray;
+}
+
+/* line 53, ../sass/_prism.scss */
+.token.punctuation {
+  color: #f8f8f2;
+}
+
+/* line 57, ../sass/_prism.scss */
+.namespace {
+  opacity: .7;
+}
+
+/* line 62, ../sass/_prism.scss */
+.token.property,
+.token.tag {
+  color: #f92672;
+}
+
+/* line 67, ../sass/_prism.scss */
+.token.boolean,
+.token.number {
+  color: #ae81ff;
+}
+
+/* line 73, ../sass/_prism.scss */
+.token.selector,
+.token.attr-name,
+.token.string {
+  color: #a6e22e;
+}
+
+/* line 82, ../sass/_prism.scss */
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+  color: #f8f8f2;
+}
+
+/* line 88, ../sass/_prism.scss */
+.token.atrule,
+.token.attr-value {
+  color: #e6db74;
+}
+
+/* line 93, ../sass/_prism.scss */
+.token.keyword {
+  color: #66d9ef;
+}
+
+/* line 98, ../sass/_prism.scss */
+.token.regex,
+.token.important {
+  color: #fd971f;
+}
+
+/* line 102, ../sass/_prism.scss */
+.token.important {
+  font-weight: bold;
+}
+
+/* line 106, ../sass/_prism.scss */
+.token.entity {
+  cursor: help;
+}
+
+/* line 109, ../sass/_prism.scss */
+pre[data-line] {
+  position: relative;
+  padding: 1em 0 1em 3em;
+}
+
+/* line 114, ../sass/_prism.scss */
+.line-highlight {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: inherit 0;
+  margin-top: 1em;
+  /* Same as .prism’s padding-top */
+  background: rgba(153, 122, 102, 0.08);
+  background: -moz-linear-gradient(left, rgba(153, 122, 102, 0.1) 70%, rgba(153, 122, 102, 0));
+  background: -webkit-linear-gradient(left, rgba(153, 122, 102, 0.1) 70%, rgba(153, 122, 102, 0));
+  background: -o-linear-gradient(left, rgba(153, 122, 102, 0.1) 70%, rgba(153, 122, 102, 0));
+  background: linear-gradient(left, rgba(153, 122, 102, 0.1) 70%, rgba(153, 122, 102, 0));
+  pointer-events: none;
+  line-height: inherit;
+  white-space: pre;
+}
+
+/* line 134, ../sass/_prism.scss */
+.line-highlight:before,
+.line-highlight[data-end]:after {
+  content: attr(data-start);
+  position: absolute;
+  top: .4em;
+  left: .6em;
+  min-width: 1em;
+  padding: 0 .5em;
+  background-color: rgba(153, 122, 102, 0.4);
+  color: #f5f2f0;
+  font: bold 65%/1.5 sans-serif;
+  text-align: center;
+  vertical-align: .3em;
+  border-radius: 999px;
+  text-shadow: none;
+  box-shadow: 0 1px white;
+}
+
+/* line 151, ../sass/_prism.scss */
+.line-highlight[data-end]:after {
+  content: attr(data-end);
+  top: auto;
+  bottom: .4em;
+}
+
+/* line 156, ../sass/_prism.scss */
+.token a {
+  color: inherit;
+}
