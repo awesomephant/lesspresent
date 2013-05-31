@@ -1,0 +1,125 @@
+@import "http://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic|Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic&subset=latin,latin-ext";
+* {
+    -moz-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+*::-moz-selection {
+    background: none repeat scroll 0 0 lightblue;
+}
+body {
+    background: none repeat scroll 0 0 #FCFCFC;
+    color: #323232;
+    counter-reset: figs;
+    font-family: Open Sans;
+    padding: 15%;
+}
+h1, h2, p {
+    -moz-font-feature-settings: "dlig";
+    color: #1E1E1E;
+}
+h1 {
+    color: cornflowerblue;
+    font-size: 50pt;
+    font-weight: normal;
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+h1, h2 {
+    font-family: Playfair Display;
+}
+h2 {
+    color: #646464;
+    font-family: open sans;
+    font-size: 24pt;
+    font-weight: 100;
+    margin-bottom: 0.5em;
+    margin-top: 1em;
+}
+a:hover, a:focus {
+    opacity: 1;
+    text-decoration: underline;
+}
+a:link, a:visited {
+    color: cornflowerblue;
+    opacity: 0.8;
+    text-decoration: none;
+}
+ol li {
+    margin-bottom: 0.5em;
+}
+ol {
+    list-style: decimal inside none;
+    padding-left: 10%;
+}
+h3 {
+    margin-top: 2em;
+}
+
+p {
+    font-size: 11pt;
+    line-height: 1.5em;
+    margin-bottom: 1em;
+}
+figure {
+    background: none repeat scroll 0 0 #F5F5F5;
+    box-shadow: 6px 0 0 cornflowerblue inset;
+    counter-increment: figs;
+    padding-left: 6px;
+    position: relative;
+}
+figcaption {
+    background: none repeat scroll 0 0 white;
+    bottom: 1em;
+    color: #787878;
+    font-size: 0.8em;
+    max-width: 30em;
+    padding: 0.5em;
+    position: absolute;
+    right: 1em;
+}
+figcaption:before {
+	content: 'fig. ' counter(figs) ' ';
+	color: rgb(50,50,50);
+	font-weight: 600;
+}
+body > ul {
+    list-style: disc inside none;
+    margin-top: 1em;
+    padding-left: 1em;
+}
+li ul {
+    margin-left: 2em;
+}
+ul {
+    margin-bottom: 1em;
+}
+.author {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    width: 100%;
+}
+.author span {
+    border-bottom: 1px solid lightgray;
+    padding: 0.4em;
+}
+img {
+    display: block;
+    width: 100%;
+	margin-bottom: 1em;
+	margin-top: 1em;
+}
+pre {
+    background: none repeat scroll 0 0 rgb(240,240,240);
+    font-family: lucida console, consolas;
+	border: 1px solid rgb(230,230,230);
+	border-radius. 2px;
+	padding: 1em;
+}
+blockquote {
+    background: none repeat scroll 0 0 #F5F5F5;
+    box-shadow: 6px 0 0 cornflowerblue inset;
+    font-style: italic;
+    padding: 1em;
+}

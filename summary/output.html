@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Javascript</title>
+	<meta name="author" content="Max Köhler"/>
+	<meta name="web" content="http://www.twitter.com/awesomephant"/>
+	<meta name="email" content="max@koehler-kn.de"/>
+	<meta name="date" content="July 1, 2013"/>
+	<link type="text/css" rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<h1 id="javascript">Javascript</h1>
+
+<p class='author'><span>Max Köhler 2013</span></p>
+
+<h2 id="einleitung">Einleitung</h2>
+
+<h2 id="anwendungsgebiete">Anwendungsgebiete</h2>
+
+<h3 id="nativeapps">Native Apps</h3>
+
+<p><img src="../assets/win8.jpg" alt="Windows 8" />
+Microsoft erlaubt es, native Windows 8 - Applikationen komplett in Javascript, HTML und CSS zu entwickeln. </p>
+
+<h3 id="webseitenwebapps">Webseiten, Webapps</h3>
+
+<p>Javascript findet vorrangig Anwendung in der Entwicklung von Webangeboten. Verbreitet sind Verbesserungen im Sinne des <em>Progressive Enhancement</em>, beispielsweise in Form von Bilder-Slidern, Lightboxen, vereinfachter Navigation oder Clientseitiger Formularvalidierung. Für diese relativ verbreiteten Usecases sind oft nur wenige Zeilen Code nötig, um den gewünschten Effekt zu erzielen. Es existiert weiterhin eine Vielzahl von Plugins, die Lösungen für übliche Probleme anbieten.</p>
+
+<p>Hiervon zu unterscheiden ist die Anwendung für die immer populärer werdenden Webapps, also Angebote, die im Browser Funktionalität anbieten, die an den Umfang klassischer Desktopanwendungen heranreicht.</p>
+
+<h2 id="berblickwebtechnologien">Überblick Webtechnologien</h2>
+
+<p>Moderne Webentwicklung basiert auf der strikten Unterscheidung und Abgrenzung von <em>Content (Inhalt)</em>, also inhaltlich strukturiertem Text, Bildern usw., <em>Style (Gestaltung)</em>, also Typographie und Farben und ** Behaviour (Verhalten), also Interaktionsmöglichkeiten mit der Internetseite, beispielsweise in Form von Dialogfenstern umfasst.</p>
+
+<p>Für jeden dieser drei Bereiche stehen eigene Programmier- bzw. Markupsprachen zur Verfügung. Eine Vermischung der Aufgabenfelder der Sprachen, beispielsweise die Einflussnahme auf das visuelle Erscheinungsbild Mittels HTML wird im profesionellen Umfeld vermieden. </p>
+
+<h3 id="content:html">Content: HTML</h3>
+
+<p>html (hypertext markup Language) ist ein xml-Dialekt zur Auszeichnung von Internetdokumenten. Es dient lediglich der statischen Strukturierung von Inhalten und ermöglicht keine logischen Programmstrukturen. Möglichkeiten der grafischen Gestaltung, beispielsweise mittels des <code>&lt;font&gt;</code> Elementes, wurden zugunsten der oben beschriebenen Aufgabentrennung wieder aus dem Sprachstandard, der vom W3C (World Wide Web Consortium) festgelegt wird, gestrichen.</p>
+
+<pre><code>&lt;tag attribute='value'&gt;Inhalt&lt;/tag&gt;
+</code></pre>
+
+<h3 id="style:css">Style: CSS</h3>
+
+<p>CSS (Cascading Stylesheet) dienen zur Definition des visuellen Erscheinungsbildes von HTML-Inhalten. Der Aufbau ist relativ einfach: Jede Style-Definition beginnt meit einem <em>Selektor</em>, der sich auf ein bestimmtes HTML-Element, oder auf eine Gruppe von Elementen mit den selben Klassen oder Attributen.
+Darauf folgen, eingeschlossen vo geschweiften Klammern, die Regeln, die für die selektierten Elemente gelten sollen, so zum Beispiel Hintergrundfarben, Schriften und Abstände. Es steht außerdem eine Reihe von Pseudeoklassen zur Verfügung, mit denen zum Beispiel Elemente selektiert werden können, über denen sich der Mauszeiger befindet (<code>div:hover</code>).</p>
+
+<pre><code>h1 {
+    color: slate;
+    font-family: 'Open Sans', sans-serif;
+    border-bottom: 4px solid gray;
+}
+h1:hover {
+    color: black;
+}
+.alert {
+    background: red;
+}
+</code></pre>
+
+<h3 id="behaviour:javascript">Behaviour: Javascript</h3>
+
+<h2 id="grundlagen">Grundlagen</h2>
+
+<h3 id="variablen">Variablen</h3>
+
+<pre><code>var foo = 5;
+var bar = 'hello';
+
+var user = {}
+user.name = 'John Doe'
+</code></pre>
+
+<h2 id="geschichte">Geschichte</h2>
+
+<p>Javascript wurde von dem amerikanischen Programmierer und heutigem Chief Technology Officer der Mozilla Corporation <em>Brendan Eich</em> Mitte der 90er Jahre entwickelt. Die erste Implementierung wurde mit dem Netscape Navigator 2.0 im September 1995, zunächst unter dem Namen <em>LiveScript</em> ausgeliefert.
+Version 3.0 des Internet Explorers August verfügte über einen Interpreter für JScript, wobei die verschiedenen Namen auf Urheberrechtsproblemen beruhten. </p>
+
+<h3 id="ecma-script">ECMA-Script</h3>
+
+<p>ECMA-Script ist die offizielle Spezifikation, auf der neben Javascript auch andere Skriptsprachen wie das in Verbindung mit Adobe Flash angewendete <em>Action Script</em> basieren.
+1996 </p>
+
+<h2 id="sprachkonzepte">Sprachkonzepte</h2>
+
+<h3 id="dynamictyping">Dynamic Typing</h3>
+
+<h3 id="sandbox-prinzip">Sandbox-Prinzip</h3>
+
+<h2 id="anwendung">Anwendung</h2>
+
+<h2 id="anwendung">Anwendung</h2>
+
+<p>Javascript findet breite Anwendung
+<img src="../assets/devices-crop.svg" alt="Plattformunabhängigkeit" /></p>
+
+<h2 id="beispiel:pong">Beispiel: Pong</h2>
+
+<h3 id="projektstruktur">Projektstruktur</h3>
+
+<ul>
+<li>Pong
+
+<ul>
+<li>index.html</li>
+<li>js
+
+<ul>
+<li>missioncontrol.js</li>
+</ul></li>
+<li>css
+
+<ul>
+<li>style.css</li>
+</ul></li>
+<li>assets
+
+<ul>
+<li>background.png</li>
+<li><p>paddle.png</p>
+
+<h3 id="htmlcss">Html/CSS</h3></li>
+</ul></li>
+</ul>
+
+<p>&lt;!doctype html&gt;
+<html>
+ <head>
+ <title>Pong</title>
+ <link href='style.css' rel='stylesheet'></link>
+ <script src='missioncontrol.js'>
+ </head>
+ <body>
+ <canvas id='world'>
+ Whoops! Your browser doesn&#8217;t support the canvas element :/
+ </canvas>
+ </body>
+</html></p></li>
+</ul>
+
+</body>
+</html>

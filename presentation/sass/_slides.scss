@@ -6,10 +6,9 @@
 
 @font-face {
     font-family: 'bebas';
-    src: url('../../assets/BebasNeue-webfont.ttf') format('truetype');
+    src: url('BebasNeue-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-
 }
 
 *{
@@ -20,10 +19,12 @@
 
 body {
 	font-size: 100%;
+	counter-reset: figs;
 	font-family: $displayfont;
 }
-section {
+.slide {
 	position: absolute;
+	overflow: hidden;
 	top: 0; right: 0; bottom: 0; left:0;
 	opacity: 0;
 	pointer-events: none;
@@ -93,8 +94,36 @@ section {
 		display: block;
 		margin: 20px auto;
 	}
+	
+	figcaption {
+		font-family: $displayfont;
+		bottom: 0;
+		font-size: 7em;
+		position: absolute;
+		color: darken($turqoise-light, 30)
+	}
+}
+.normal figcaption {
+	position: absolute;
+	top: 1em;
+	left: 1em;
+	background: white;
+	padding: .5em;
+	font-family: sans-serif;
 }
 
+.normal {
+	width: 100%;
+	img {width: 100%}
+}
+	
+.full {
+	counter-increment: figs;
+	figcaption:before {
+		opacity: .6;
+		content: 'fig. 'counter(figs) ' ';
+	}
+}
 .sandbox{
 	background-image: url(../../assets/sandbox.png);
 	background-size: cover;
@@ -121,7 +150,6 @@ code {
 img {
 	margin: 0 auto;
 	display: block;
-	margin-top: 2em;
 }
 
 .demo-alert {
@@ -140,9 +168,12 @@ img {
 .tile {
 	font-family: sans-serif;
 	display: inline-block;
+	float: left;
 	background: white;
 	margin-bottom: 10px;
-	width: 100%;
+	width: 30%;
+	margin: 1%;
+	.toc & {width: 100%; margin: 0}
 	@include box-shadow(0 2px 5px -1px rgba(black, .4));
 	figcaption {
 		padding: .5em;
@@ -195,4 +226,10 @@ img {
 		background: darken($pink, 5);
 		box-shadow: 0 0 0 10px lighten($pink, 20);
 	}
+}
+
+.slider {
+	background: $pink;
+	width: 10px;
+	height: 100%;
 }
